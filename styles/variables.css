@@ -1,1 +1,12 @@
+/* stylelint-disable rule-empty-line-before */
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --inter-main-font: inter-variable, arial, helvetica;
+  --presstart-accent-font: pressstart2p-regular;
+  --wght-main-text: 400;
+  --wght-card-title: 700;
+  --linear-grad-first: #e7e7e7;
+  --linear-grad-second: #1a1a1a;
+  --bg-color: #fff;
+  --text-color: #000;
+}

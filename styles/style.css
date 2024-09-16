@@ -1,3 +1,4 @@
+/* stylelint-disable rule-empty-line-before */
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -5,7 +6,6 @@
 ✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
@@ -15,6 +15,147 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  max-inline-size: 700px;
+  margin: auto;
+  font-family: var(--inter-main-font, Arial, Helvetica);
+  /*background-image: 
+  repeating-linear-gradient(to right, #d3d3d3, transparent),
+  repeating-linear-gradient(to bottom, var(--linear-grad-first), var(--linear-grad-second));*/
+  background-attachment: fixed;
+  font-variation-settings: var(--wght-main-text);
+  background-position: center;
+  background-size: 2px;
+  background-color: var(--bg-color);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  font-family: var(--presstart-accent-font);
+  text-transform: uppercase;
+  padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  margin-block-end: 50px;
+}
+
+.header-title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.header-subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 5px 0 25px;
+}
+
+.theme-menu__button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-content-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.card-title {
+  font-weight: var(--wght-card-title);
+  font-size: 18px;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.card-image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.card-text {
+  padding: 25px;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.card-text p:not(:last-child) {
+  margin-block-end: 27px;
+}
+
+.heart_like {
+  display: flex;
+  gap: 12px;
+  align-self: flex-end;
+  margin: 0 25px 25px 0;
+}
+
+button {
+  font-family: var(--presstart-accent-font);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.card__icon-button {
+  border: none;
+  align-self: center;
+  padding: 0;
+}
+
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+}
+
+.button__text {
+  font-size: 14px;
+}
+
+.footer {
+  align-self: center;
+}
+
+.save-floppy-button {
+  display: flex;
+  gap: 8px;
+  padding: 18.5px 21px;
+}
+
+.save-floppy-button .button__text {
+  align-self: center;
+}
+
+@media (width <= 376px) {
+  .save-floppy-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 21px;
+  }
 }

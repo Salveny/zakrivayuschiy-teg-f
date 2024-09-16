@@ -4,3 +4,32 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --wght-main-text: 400;
+  --wght-card-title: 700;
+  --linear-grad-first: #e7e7e7;
+  --linear-grad-second: #1a1a1a;
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+:root.theme-dark {
+  --wght-main-text: 465;
+  --wght-card-title: 785;
+  --linear-grad-first: #007f0c;
+  --linear-grad-second: #004306;
+  --bg-color: #000;
+  --text-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wght-main-text: 465;
+    --wght-card-title: 785;
+    --linear-grad-first: #007f0c;
+    --linear-grad-second: #004306;
+    --bg-color: #000;
+    --text-color: #00cc14;
+  }
+}
