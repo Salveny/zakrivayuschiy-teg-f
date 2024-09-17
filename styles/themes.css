@@ -8,28 +8,35 @@
 :root.theme-light {
   --wght-main-text: 400;
   --wght-card-title: 700;
-  --linear-grad-first: #e7e7e7;
-  --linear-grad-second: #1a1a1a;
+  --linear-grad-first: #d3d3d3;
+  --linear-grad-second: #e7e7e7;
+  --linear-grad-third: #1a1a1a;
   --bg-color: #fff;
   --text-color: #000;
+  --color-stroke-html: #fff;
 }
 
 :root.theme-dark {
   --wght-main-text: 465;
   --wght-card-title: 785;
-  --linear-grad-first: #007f0c;
-  --linear-grad-second: #004306;
+  --linear-grad-first: #000000;
+  --linear-grad-second: #007f0c;
+  --linear-grad-third: #004306;
   --bg-color: #000;
   --text-color: #00cc14;
+  --color-stroke-html: #000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --wght-main-text: 465;
     --wght-card-title: 785;
-    --linear-grad-first: #007f0c;
-    --linear-grad-second: #004306;
+    --linear-grad-first: #000000;
+    --linear-grad-second: #007f0c;
+    --linear-grad-third: #004306;
     --bg-color: #000;
     --text-color: #00cc14;
+    --color-stroke-html: #000;
+
   }
 }
