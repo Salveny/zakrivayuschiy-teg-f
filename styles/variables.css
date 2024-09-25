@@ -11,4 +11,8 @@
   --bg-color: #fff;
   --text-color: #000;
   --color-stroke-html: #fff;
+  --color-mix-blend: #fff;
+
+  --color-heart-contour: #000;
+  --color-heart-fill: #f00;
 }
