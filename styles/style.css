@@ -228,7 +228,7 @@ button {
 }
 
 .card__icon-button {
-  border: 2px solid transparent;
+  border-color: transparent;
   align-self: center;
 }
 
@@ -392,6 +392,7 @@ button {
   height: 21px;
   z-index: 1;
   mix-blend-mode: difference;
+  color: var(--color-mix-blend);
 }
 
 .dialog {
@@ -443,9 +444,34 @@ button {
   position: relative;
 }
 
+.ok_button:focus-visible {
+  box-shadow: 2px 2px 0 var(--text-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.ok_button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  transition: 0.5s ease-in-out;
+  transform-origin: left;
+  background-color: currentColor;
+  transform: scaleX(0);
+}
+
+.ok_button:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0;
+}
+
 .ok_button-text {
   font-size: 14px;
   position: relative;
+  text-transform: uppercase;
   z-index: 1;
   color: var(--color-mix-blend);
   mix-blend-mode: difference;
