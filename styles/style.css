@@ -275,6 +275,7 @@
   border-color: transparent;
   align-self: center;
   transition: border 0.3s ease;
+  background-color: transparent;
 }
 
 .card__icon-button:focus {
