@@ -1,18 +1,17 @@
 /* stylelint-disable rule-empty-line-before */
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --inter-main-font: inter-variable, arial, helvetica;
-  --presstart-accent-font: pressstart2p-regular;
+  --main-font: inter-variable, arial, helvetica;
+  --accent-font: pressstart2p-regular;
   --wght-main-text: 400;
   --wght-card-title: 700;
-  --linear-grad-first: #d3d3d3;
-  --linear-grad-second: #e7e7e7;
-  --linear-grad-third: #1a1a1a;
+  --linear-grad-color: #d3d3d3;
+  --linear-grad-smooth-start: #e7e7e7;
+  --linear-grad-smooth-end: #1a1a1a;
   --bg-color: #fff;
   --text-color: #000;
   --color-stroke-html: #fff;
   --color-mix-blend: #fff;
-
   --color-heart-contour: #000;
   --color-heart-fill: #f00;
 }
